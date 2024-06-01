@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+/* || RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* || VARIABLES */
+:root {
+  --BGCOLOR: hsl(30, 54%, 90%);
+  --BGCOLOR-MAIN: hsl(0, 0%, 100%);
+  --BGCOLOR-CARD: hsl(330, 100%, 98%);
+  --FONTCOLOR-H2: hsl(14, 45%, 36%);
+  --FONTCOLOR-H3: hsl(332, 51%, 32%);
+  --FONTCOLOR-H1: hsl(24, 5%, 18%);
+  --FONTCOLOR-HR: hsl(30, 18%, 87%);
+  --FONTCOLOR-P: hsl(30, 10%, 34%);
+}
+
+/* || GENERAL STYLES */
+body {
+  font-size: 1.2rem;
+  color: var(--FONTCOLOR-P);
+  line-height: 1.7rem;
+}
+
+h2 {
+  color: var(--FONTCOLOR-H2);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  color: var(--FONTCOLOR-HR);
+  /* margin-top: 2rem; */
+}
+
+.image img {
+  margin: unset;
+}
+
+main {
+  background-color: Var(--BGCOLOR-MAIN);
+}
+
+.main_section {
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+.recipe_note h1 {
+  color: var(--FONTCOLOR-H1);
+  line-height: 2.2rem;
+  font-size: 2rem;
+}
+
+.recipe_note p {
+  margin: 1.5rem 0;
+  color: var(--FONTCOLOR-H1);
+}
+
+.preparation_time {
+  padding: 0 1.5rem;
+  background-color: var(--BGCOLOR-CARD);
+  border-radius: 1rem;
+}
+
+.preparation_time h3 {
+  padding-top: 1.2rem;
+  color: var(--FONTCOLOR-H3);
+}
+
+.preparation_time ul {
+  padding-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+
+ul,
+ol {
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0.6rem;
+  padding: 0 0 0 2rem;
+}
+
+li {
+  padding-left: 1.3rem;
+}
+
+span {
+  color: var(--FONTCOLOR-H2);
+  font-weight: bold;
+  text-align: left;
+}
+
+.nutrients p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (min-width: 780px) {
+  body {
+    background-color: var(--BGCOLOR);
+  }
+
+  img {
+    padding: 2rem 2rem 0rem 2rem;
+    border-radius: 2.7rem;
+  }
+
+  main {
+    max-width: 50%;
+    margin: 5rem auto;
+    border-radius: 1.3rem;
+  }
+
+  .main_section {
+    padding-bottom: 2rem;
+  }
+
+  .nutrients p {
+    padding-right: 15rem;
+  }
+}
